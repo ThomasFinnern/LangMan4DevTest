@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!-- ... Tab General ................................. -->
+
+	<fieldset
+			name="tab01"
+			label="COM_LANG4DEV_CONFIG_TAB_GENERAL"
+			description="COM_LANG4DEV_CONFIG_TAB_GENERAL_DESC"
+	>
+		<!-- needed when more entries are general ...
+				field name="intro_text"
+                type="editor"
+                label="COM_LANG4DEV_INTRODUCTION_TEXT"
+	            description="COM_LANG4DEV_INTRODUCTION_DESC"
+				filter="JComponentHelper::filterText"
+				buttons="false"
+		/-->
+
+		<field
+				name="ToDo_list_general0"
+				type="textarray"
+				label="!!! ToDo !!!: In config - general"
+				description="ToDo list for config in this tab"
+				rows="10"
+				class="text-danger"
+				showon="isDevelop:1"
+				readonly="true"
+				default="* add _NOTE_ part to lang of note elements\n
+				* use display instead of show for const and menu ..."
+		>
+			<option value="0"></option>
+		</field>
+
+		<!--field
+				name="ToDo_list_general_old"
+				type="list"
+				default="0"
+				label="!!! ToDo !!!: In config - general"
+				description="Developers ToDo list may still contain elements when RSG2 is ready to ship :-("
+				class="text text-danger"
+				showon="isDevelop:1"
+		>
+			<option value="0">* add _NOTE_ part to lang of note elements</option>
+			<option value="1">* use display instead of show for const and menu ...</option>
+			<option value="2">* </option>
+			<option value="3">* </option>
+			<option value="4">* </option>
+		</field-->
+
+
+		<field
+				name="isDoComment_prepared_missing_ids"
+				type="radio"
+				label="COM_LANG4DEV_COMMENT_PREPARED_MISSING_IDS"
+				description="COM_LANG4DEV_COMMENT_PREPARED_MISSING_IDS_DESC"
+				default="1"
+				layout="joomla.form.field.radio.switcher"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+
+		<field
+				type="spacer"
+				name="spacer_admin"
+				hr="true"
+		/>
+
+		<!--field
+			name="Example_show_foo_name_label"
+			type="list"
+			label="COM_LANG4DEV_FIELD_TEST_SHOW_CATEGORY_LABEL"
+			description="COM_LANG4DEV_FIELD_TEST_SHOW_CATEGORY_LABEL_DESC"
+			default="0"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field-->
+
+		<!--field
+			name="example_show_name"
+			type="radio"
+			label="COM_LANG4DEV_TEST_FIELD_PARAMS_NAME_LABEL"
+			description="COM_LANG4DEV_TEST_FIELD_PARAMS_NAME_LABEL_DESC"
+			default="1"
+			layout="joomla.form.field.radio.switcher"
+			>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field-->
+
+	</fieldset>
+
+	<!-- ... Tab Project ................................. -->
+
+	<fieldset
+			name="tab02"
+			label="COM_LANG4DEV_CONFIG_TAB_PROJECT"
+			description="COM_LANG4DEV_CONFIG_TAB_PROJECT_DESC"
+	>
+		<!--field
+				type="spacer"
+				name="spacer_upload_01"
+				hr="true"
+		/-->
+
+		<field
+				name="ToDo_list_project"
+				type="list"
+				default="0"
+				label="!!! ToDo !!!: In config - project"
+				description="Developers ToDo list may still contain elements when project is ready to ship :-("
+				class="text text-danger"
+				showon="isDevelop:1"
+		>
+			<option value="0">*</option>
+			<option value="1">*</option>
+			<option value="2">*</option>
+			<option value="3">*</option>
+			<option value="4">*</option>
+		</field>
+
+
+		<!-- ... block project ... -->
+
+		<!--field
+				name="dummyProject"
+				type="text"
+				default="???? project"
+				label="COM_LANG4DEV_PROJECT_DUMMY"
+				description="COM_LANG4DEV_PROJECT_DUMMY_DESC"
+				class="">
+		</field-->
+	</fieldset>
+
+	<!-- ... Tab prjTextIds ................................. -->
+
+	<fieldset
+			name="tab03"
+			label="COM_LANG4DEV_CONFIG_TAB_PRJ_TRANS_IDS"
+			description="COM_LANG4DEV_CONFIG_TAB_PRJ_TRANS_IDS_DESC"
+	>
+		<!--field
+				type="spacer"
+				name="spacer_upload_01"
+				hr="true"
+		/-->
+
+		<field
+				name="ToDo_list_prj_trans_IDS"
+				type="list"
+				default="0"
+				label="!!! ToDo !!!: In config - PRJ trans IDS"
+				description="Developers ToDo list may still contain elements when project is ready to ship :-("
+				class="text text-danger"
+				showon="isDevelop:1"
+		>
+			<option value="0">*</option>
+			<option value="1">*</option>
+			<option value="2">*</option>
+			<option value="3">*</option>
+			<option value="4">*</option>
+		</field>
+
+
+		<!-- ... block Trans IDS ... -->
+
+		<field
+				name="isSearchForTranslationIds"
+				type="radio"
+				label="COM_LANG4DEV_SEARCH_TRANS_IDS"
+				description="COM_LANG4DEV_SEARCH_TRANS_IDS_DESC"
+				default="1"
+				layout="joomla.form.field.radio.switcher"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+
+		<field
+				name="isSearchForStringIn_TEXT_"
+				type="radio"
+				label="COM_LANG4DEV_SEARCH_STRING_IN_TEXT_"
+				description="COM_LANG4DEV_SEARCH_STRING_IN_TEXT_DESC"
+				default="1"
+				layout="joomla.form.field.radio.switcher"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<!--=field
+				name="dummyTransIds"
+				type="text"
+				default="???? TransIds"
+				label="COM_LANG4DEV_PRJ_TRANS_IDS_DUMMY"
+				description="COM_LANG4DEV_PRJ_TRANS_IDS_DUMMY_DESC"
+				class="">
+		</field-->
+	</fieldset>
+
+	<!-- ... Tab Translation ................................. -->
+
+	<fieldset
+			name="tab04"
+			label="COM_LANG4DEV_CONFIG_TAB_TRANSLATION"
+			description="COM_LANG4DEV_CONFIG_TAB_TRANSLATION_DESC"
+	>
+		<!--field
+				type="spacer"
+				name="spacer_upload_01"
+				hr="true"
+		/-->
+
+		<field
+				name="ToDo_list_translation"
+				type="list"
+				default="0"
+				label="!!! ToDo !!!: In config - translation"
+				description="Developers ToDo list may still contain elements when project is ready to ship :-("
+				class="text text-danger"
+				showon="isDevelop:1"
+		>
+			<option value="0">*</option>
+			<option value="1">*</option>
+			<option value="2">*</option>
+			<option value="3">*</option>
+			<option value="4">*</option>
+		</field>
+
+
+		<!-- ... block translation ... -->
+
+		<field
+				name="mainLangId"
+				type="text"
+				default="en-GB"
+				label="COM_RSGALLERY2_MAIN_LANGUAGE_ID"
+				description="COM_RSGALLERY2_MAIN_LANGUAGE_ID_DESC"
+				class="">
+		</field>
+
+		<field
+				name="transLangId"
+				type="text"
+				default="de-DE"
+				label="COM_RSGALLERY2_TRANS_LANGUAGE_ID"
+				description="COM_RSGALLERY2_TRANS_LANGUAGE_ID_DESC"
+				class="">
+		</field>
+
+		<field
+				name="isShowTranslationOfAllIds"
+				type="radio"
+				label="COM_LANG4DEV_SHOW_TRANSLATION_OF_ALL_IDS"
+				description="COM_LANG4DEV_SHOW_TRANSLATION_OF_ALL_IDS_DESC"
+				default="1"
+				layout="joomla.form.field.radio.switcher"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field
+				name="isEditAndSaveMainTranslationFile"
+				type="radio"
+				label="COM_LANG4DEV_EDIT_AND_SAVE_MAIN_TRANSLATION_FILE"
+				description="COM_LANG4DEV_EDIT_AND_SAVE_MAIN_TRANSLATION_FILE_DESC"
+				default="0"
+				layout="joomla.form.field.radio.switcher"
+				readonly="true"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<!--field
+				name="dummyTranslation"
+				type="text"
+				default="??? dummy translation"
+				label="COM_LANG4DEV_PROJECT_DUMMY"
+				description="COM_LANG4DEV_PROJECT_DUMMY_DESC"
+				class="">
+		</field-->
+	</fieldset>
+
+	<!-- ... Tab Debug ................................. -->
+
+	<fieldset
+			name="debug"
+			label="COM_LANG4DEV_CONFIG_TAB_DEBUG"
+			description="COM_LANG4DEV_CONFIG_TAB_DEBUG_DESC"
+	>
+		<field type="spacer"
+		       name="test_inner_02"
+		       hr="true"/>
+		<!-- ... block  ... -->
+
+		<field
+				id="isDebugBackend"
+				name="isDebugBackend"
+				type="radio"
+				default="0"
+				label="COM_LANG4DEV_DEBUG_BACKEND"
+				description="COM_LANG4DEV_DEBUG_BACKEND_DESC"
+				layout="joomla.form.field.radio.switcher"
+				filter="integer"
+				validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<!--
+		<field
+				id="isDebugSite"
+				name="isDebugSite"
+				type="radio"
+				default="0"
+				label="COM_LANG4DEV_DEBUG_SITE"
+				description="COM_LANG4DEV_DEBUG_SITE_DESC"
+				layout="joomla.form.field.radio.switcher"
+				filter="integer"
+				validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		-->
+		<field
+				id="isDevelop"
+				name="isDevelop"
+				type="radio"
+				default="0"
+				label="COM_LANG4DEV_DEVELOP"
+				description="COM_LANG4DEV_DEVELOP_DESC"
+				layout="joomla.form.field.radio.switcher"
+				filter="integer"
+				validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+	</fieldset>
+
+
+	<!-- ... Tab Permissions ................................. -->
+
+	<fieldset
+			name="permissions"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			description="JCONFIG_PERMISSIONS_DESC"
+	>
+
+		<!-- ... block  ... -->
+
+		<!-- field name="note31" type="note" class="alert alert-dark" close="true" label="LOREMIPSUM" description="02_LOREMIPSUM_DESC" /-->
+
+		<field
+				name="rules"
+				type="rules"
+				label="JCONFIG_PERMISSIONS_LABEL"
+				validate="rules"
+				filter="rules"
+				component="com_lang4dev"
+				section="component"
+		/>
+
+	</fieldset>
+
+	<!-- ... Temp  ................................. -->
+
+
+	<!-- ... End Temp .............................. -->
+
+</config>
